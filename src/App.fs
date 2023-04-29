@@ -15,10 +15,8 @@ UIkit.use(Icons);"""
 
 open Types
 open Components.Navbar
-open Components.Card
 
 open type Navbar
-open type Card
 
 let App () =
 
@@ -36,14 +34,10 @@ let App () =
     Navbar(setApiKey apiKey, setPage currentPage)
 
     article.class' ("uk-container") {
-      h1 { "Hello World!" }
-      $"Your API key is: {apiKey.Value}"
-      $"Your Page is: {currentPage.Value}"
-
       match currentPage.Value with
+      | Pages.Movie id -> Pages.Movie.View id
       | Pages.Landing -> Pages.Landing.View()
       | Pages.Search -> Pages.Search.View()
-      | Pages.Movie id -> Pages.Movie.View id
     }
   }
 
