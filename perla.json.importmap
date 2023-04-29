@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "uikit": "https://ga.jspm.io/npm:uikit@3.16.15/dist/js/uikit.js",
+    "uikit/dist/js/uikit-icons.js": "https://ga.jspm.io/npm:uikit@3.16.15/dist/js/uikit-icons.js"
+  }
+}

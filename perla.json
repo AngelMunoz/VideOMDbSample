@@ -1,0 +1,22 @@
+{
+    "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/v1.0.0-beta-022/perla.schema.json",
+    "index": "./index.html",
+    "fable": {
+        "project": "./src/App.fsproj",
+        "sourceMaps": true
+    },
+    "mountDirectories": {
+        "/": "./src",
+        "/assets": "./assets"
+    },
+    "dependencies": [
+        {
+            "name": "uikit",
+            "version": "3.16.15"
+        }
+    ],
+    "devDependencies": [],
+    "paths": {
+        "uikit/dist/js/uikit-icons.js": "https://ga.jspm.io/npm:uikit@3.16.15/dist/js/uikit-icons.js"
+    }
+}

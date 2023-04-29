@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Types.fs" />
+    <Compile Include="Components\Navbar.fs" />
+    <Compile Include="Components\Card.fs" />
+    <Compile Include="Pages\Landing.fs" />
+    <Compile Include="Pages\Search.fs" />
+    <Compile Include="Pages\Movie.fs" />
+    <Compile Include="App.fs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" Version="4.0.0" />
+    <PackageReference Include="Fable.Browser.Dom" Version="2.14.0" />
+    <PackageReference Include="Fable.Promise" Version="3.2.0" />
+    <PackageReference Include="Thoth.Fetch" Version="3.0.1" />
+    <PackageReference Include="Vide.Fable" Version="0.0.13" />
+  </ItemGroup>
+</Project>
